@@ -1,0 +1,23 @@
+build_kernel           User Manuals          build_kernel
+
+
+NAME
+	build_kernel
+SYNOPSIS
+	file
+DESCRIPTION
+	builds kernel to do what the assignment 
+	was asking.
+ENVIRONMENT
+	Linux
+DIAGNOSTICS
+	The following diagnostics may be issued.
+	
+	cd error on script check when its not an
+	error or incorrect.
+AUTHOR
+	Jehan Perera <s3720135@student.rmit.edu.au>
+SEE ALSO
+	kernel_performance_data
+Linux 		Last change:OCTOBER 2020
+
