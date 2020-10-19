@@ -7,24 +7,22 @@
 apt-get update
 
 #install the necessary library to begin
-apt install raspberry0kernel-headers build-essential bc git wget bison flex libssl-dev make
+apt install rapsberrypi0kernel-headers build-essential bc git wget bison flex libssl-dev make
 
-#send the user to the home repository and clone repositories
+#send the user to the home repository
 cd~
-git clone --depth=1 https://github.com/rapsberrypi/linux
-cd ..
+git clone --depth=1 https://github.com/rapsberrypi/linux || (cd ./linux && git pull)
 git clone --depth=1 https://github.com/s3720135/s3720135/assignment2
-cd ..
+
+#copy the .config file into github repostitory
+cd ./linux
+cp -R ~/linux/.config ~/assignment2
 
 #get kernel version and make the kernel
-cd linux
 KERNEL=kernel7l
 make bcm2711_defconfig
 make -j4 zImage modules dtbs
 make modules_install
-
-#copy the .config file into the student assignment git respository
-cp -R ~/linux/.config ~/assignment2
 
 #copy the files  into boot path for reboot
 cp arch/arm/boot/dts/*.dtb* /boot/overlays/
@@ -32,5 +30,3 @@ cp arch/arm/boot/dtsoverlays/*.dtb* /boot/overlays/
 cp arch/arm/boot/dts/overlays/README /boot/overlays/
 cp arch/arm/boot/zImage /boot/$KERNEL.img
 
-#preformance startup
-./ first_monitoring

@@ -1,0 +1,23 @@
+commit 30636b4e74a08dd12b640d5269c0abc84545ab39
+Author: s3720135 <s3720135@student.rmit.edu.au>
+Date:   Mon Oct 19 16:57:39 2020 +1100
+
+    user manual for build_kernel
+
+commit 00677d207795d84e4c9022cb93f3c668ae63ff50
+Author: s3720135 <s3720135@student.rmit.edu.au>
+Date:   Mon Oct 19 16:57:02 2020 +1100
+
+    the script to build kernel
+
+commit 5248903576e8e2c630419c54bc1d72836c790f56
+Author: s3720135 <s3720135@student.rmit.edu.au>
+Date:   Sun Oct 18 17:09:13 2020 +1100
+
+    added .config file
+
+commit e6d6d7c7569e69dc3898db000ab812be5489977c
+Author: s3720135 <72490555+s3720135@users.noreply.github.com>
+Date:   Sun Oct 18 16:13:49 2020 +1100
+
+    Initial commit
