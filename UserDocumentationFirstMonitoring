@@ -1,0 +1,19 @@
+first_monitoring          User Documentation          first_monitoring
+
+NAME
+	first_monitoring
+
+DESCRIPTION
+	First_monitoring gets the performance of the raspberry pi
+	while compiling the kernel.
+	Data of the performanceis written in the
+	kernel_performance_data.	
+	
+ENVIRONMENT
+	Linux
+
+AUTHOR
+	Jehan Perera s3720135@student.rmit.edu.au
+
+SEE ALSO
+Linux	last change: OCTOBER 2020
